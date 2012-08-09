@@ -5,23 +5,49 @@
 //Project 2
 
 
-//Procedure
-var cookTemp= 375;
 
-var pizzaTemp= function(setTemp) {
-	var ovenTemp=375;
-	if (ovenTemp===(setTemp)){
-		console.log("Our oven is preheated, and we're ready to cook");
-	} else {
-		console.log("Our oven is still preheating, so lets work on adding our toppings");
-	};	
+//Boolean
+
+var qtyPizzas = 3
+var starving = true
+/*
+var numberPizzas = function(qty, veryHungry) {
+	var hunger=true;
+	if (hunger===veryHungry) {
+		console.log("I am starving, I think I will make")
+	}
+
+
+
 }
-var preheatTemp=pizzaTemp(cookTemp)
+
+*/
+
+
+
+
+
 
 
 
 
 /*
+//Procedure
+var cookTemp= 375;
+var pizzaTemp= function(setTemp) {
+	var ovenTemp=375;
+	if (ovenTemp === setTemp){
+		console.log("Our oven has finished preheating, let's make a pizza!");
+	} else {
+		console.log("While our oven finishes preheating, let's work on adding our toppings to our pizza");
+	};	
+}
+var preheatOven=pizzaTemp(cookTemp)
+*/
+
+
+
+//Array
 var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"],
 	cupsOfToppings= [ 1, .5, .25, .25, .25];
 
@@ -37,6 +63,6 @@ var addToppings= function (numberPizzas, ingredients) {
 };
 
 for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
-		addToppings(3, toppings);
-*/
+		addToppings(qtyPizzas, toppings);
+}
 
