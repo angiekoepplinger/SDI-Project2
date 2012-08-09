@@ -14,6 +14,15 @@ var pizzaTemp= function(setTemp) {
 
 
 }
+
+
+
+
+
+
+
+/* 
+//array function
 var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"],
 	cupsOfToppings= [ 1, .5, .25, .25, .25];
 
@@ -31,4 +40,4 @@ var addToppings= function (numberPizzas, ingredients) {
 //for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
 		addToppings(3, toppings);
 //}
-
+*/
