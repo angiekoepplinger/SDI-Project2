@@ -10,19 +10,15 @@
 
 var qtyPizzas = 3
 var starving = true
-/*
 var numberPizzas = function(qty, veryHungry) {
 	var hunger=true;
 	if (hunger===veryHungry) {
-		console.log("I am starving, I think I will make")
+		console.log("I am starving, I think I will make " + qty + " pizzas!");
+	} else {
+		console.log("I am not overly hungry, I think I'll just make 1 pizza for now");
 	}
-
-
-
 }
-
-*/
-
+var howManyPizzas = numberPizzas(qtyPizzas, starving)
 
 
 
@@ -46,7 +42,7 @@ var preheatOven=pizzaTemp(cookTemp)
 */
 
 
-
+/*
 //Array
 var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"],
 	cupsOfToppings= [ 1, .5, .25, .25, .25];
@@ -65,4 +61,4 @@ var addToppings= function (numberPizzas, ingredients) {
 for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
 		addToppings(qtyPizzas, toppings);
 }
-
+*/
