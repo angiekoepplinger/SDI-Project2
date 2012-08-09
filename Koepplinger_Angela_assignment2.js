@@ -5,10 +5,10 @@
 //Project 2
 
 
-
+/*
 //Boolean
-var qtyPizzas = 2
-var starving = true
+var qtyPizzas = 2;
+var starving = true;
 var numberPizzas = function(qty, veryHungry) {
 	var hunger=true;
 	if (hunger===veryHungry) {
@@ -20,9 +20,24 @@ var numberPizzas = function(qty, veryHungry) {
 }
 var howManyPizzas = numberPizzas(qtyPizzas, starving)
 
+*/
+
+//String
+var typeCrust = "thin";
+	prepOven = "preheat";
+var crustReady = function(crustType, startOven)
+	var crustType = "thin";
+	var ovenTemp = 375;
+	var prepared = true;
+	if(crustType===TypeCrust & prepared===true)
+		console.log("My " + typeCrust + " pizza crust is ready to bake, let's " + startOven + " the oven now.");
+	} else {
+		console.log("Let me finish preparing my " + crustType + " pizza crust and then I will start the oven.");
+	}
+	var readyToPreheat = crustReady(typeCrust, prepOven)
 
 
-
+/*
 //Procedure
 var cookTemp= 375;
 var pizzaTemp= function(setTemp) {
