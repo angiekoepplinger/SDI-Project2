@@ -5,62 +5,64 @@
 //Project 2
 
 
-/*
-//Boolean
+
 var qtyPizzas = 2;
 var starving = true;
+var typeCrust = "thin";
+var	prepOven = "preheat";
+var cookTemp = 375;
+var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"];
+var	cupsOfToppings= [ 1, .5, .25, .25, .25];
+
+//Boolean
 var numberPizzas = function(qty, veryHungry) {
 	var hunger=true;
-	if (hunger===veryHungry) {
+	if (hunger === veryHungry) {
 		console.log("I am starving, I think I will make " + qty + " pizzas!");
 	} else {
 		console.log("I am not overly hungry, I think I'll just make 1 pizza for now");
 	}
 	return starving;
-}
+};
 var howManyPizzas = numberPizzas(qtyPizzas, starving)
 
-*/
+
 
 //String
-var typeCrust = "thin";
-	prepOven = "preheat";
-var crustReady = function(crustType, startOven)
+var crustReady = function(crustType, startOven, ovenTemp){
 	var crustType = "thin";
-	var ovenTemp = 375;
 	var prepared = true;
-	if(crustType===TypeCrust & prepared===true)
-		console.log("My " + typeCrust + " pizza crust is ready to bake, let's " + startOven + " the oven now.");
+	if(crustType === typeCrust && prepared === true) {
+		console.log("My " + typeCrust + " pizza crust is ready to bake, let's " + startOven + " the oven to " + ovenTemp + " degrees now.");
 	} else {
-		console.log("Let me finish preparing my " + crustType + " pizza crust and then I will start the oven.");
+		console.log("Let me finish preparing my " + crustType + " pizza crust and then I will " + startOven + " the oven to " + ovenTemp + ".");
 	}
-	var readyToPreheat = crustReady(typeCrust, prepOven)
+};
+	var readyToPreheat = crustReady(typeCrust, prepOven, cookTemp)
 
 
-/*
+
+
+
 //Procedure
-var cookTemp= 375;
-var pizzaTemp= function(setTemp) {
-	var ovenTemp=375;
+var pizzaTemp = function(setTemp) {
+var ovenTemp =375;
 	if (ovenTemp === setTemp){
 		console.log("Our oven has finished preheating, let's start adding our toppings!");
 	} else {
 		console.log("While our oven finishes preheating, let's work on adding our toppings to our pizza");
-	};	
-}
-var preheatOven=pizzaTemp(cookTemp)
+	}	
+};
+var preheatOven = pizzaTemp(cookTemp)
 
 
 
 
 //Array
-var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"],
-	cupsOfToppings= [ 1, .5, .25, .25, .25];
-
-var addToppings= function (numberPizzas, ingredients) {
+var addToppings = function (numberPizzas, ingredients) {
 	for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
-		var whichTopping= ingredients[toppingsNumber]
-		var measureToppings= cupsOfToppings[toppingsNumber]
+		var whichTopping = ingredients[toppingsNumber]
+		var measureToppings = cupsOfToppings[toppingsNumber]
 		var toppingsTotal = numberPizzas * cupsOfToppings[toppingsNumber];
 		console.log("I will add " + toppingsTotal + " cups of " + whichTopping + " to my pizzas!  " + toppingsTotal/numberPizzas  + " cups to each.");
 	}
