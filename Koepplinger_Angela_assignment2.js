@@ -10,10 +10,18 @@ var cookTemp= 375;
 
 var pizzaTemp= function(setTemp) {
 	var ovenTemp=375;
-	if (ovenTemp===setTemp)
-
-
+	if (ovenTemp===(setTemp)){
+		console.log("Our oven is preheated, and we're ready to cook");
+	} else {
+		console.log("Our oven is still preheating, so lets work on adding our toppings");
+	};	
 }
+var preheatTemp=pizzaTemp(cookTemp)
+
+
+
+
+/*
 var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"],
 	cupsOfToppings= [ 1, .5, .25, .25, .25];
 
@@ -28,7 +36,7 @@ var addToppings= function (numberPizzas, ingredients) {
 	return ingredients;
 };
 
-//for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
+for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
 		addToppings(3, toppings);
-//
+*/
 
