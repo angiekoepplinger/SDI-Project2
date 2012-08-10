@@ -5,7 +5,7 @@
 //Project 2
 
 
-
+//
 var qtyPizzas = 2;
 var starving = true;
 var typeCrust = "thin";
@@ -14,18 +14,18 @@ var cookTemp = 375;
 var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"];
 var	cupsOfToppings= [ 1, .5, .25, .25, .25];
 
+
 //Boolean
 var numberPizzas = function(qty, veryHungry) {
 	var hunger=true;
 	if (hunger === veryHungry) {
-		console.log("I am starving, I think I will make " + qty + " pizzas!");
+		console.log("I am starving, I think I will make " + qty + " pizzas today!");
 	} else {
 		console.log("I am not overly hungry, I think I'll just make 1 pizza for now");
 	}
 	return starving;
 };
 var howManyPizzas = numberPizzas(qtyPizzas, starving)
-
 
 
 //String
@@ -41,9 +41,6 @@ var crustReady = function(crustType, startOven, ovenTemp){
 	var readyToPreheat = crustReady(typeCrust, prepOven, cookTemp)
 
 
-
-
-
 //Procedure
 var pizzaTemp = function(setTemp) {
 var ovenTemp =375;
@@ -54,8 +51,6 @@ var ovenTemp =375;
 	}	
 };
 var preheatOven = pizzaTemp(cookTemp)
-
-
 
 
 //Array
@@ -73,4 +68,28 @@ var addToppings = function (numberPizzas, ingredients) {
 for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
 		addToppings(qtyPizzas, toppings);
 }
+
+
+//Number
+var bakeTime = 15
+var cookTime = function (minutesCook) {
+	var minutesRemain = minutesCook - 0;
+	var checkPizza = 5;
+	While (minutesCook > 0) {
+		console.log( "Pizza is not quite done yet, I will check bak in " + checkPizza + " minutes.");
+		minutesCook -=5;
+	};
+
+	console.log("Pizza is finished, I can't wait to try it!")
+}	
+
+
+
+
+
+
+
+
+
+
 
