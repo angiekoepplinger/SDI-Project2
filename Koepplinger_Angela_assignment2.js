@@ -13,17 +13,18 @@ var	prepOven = "preheat";
 var cookTemp = 375;
 var toppings= ["cheese", "pepperoni", "olives", "peppers", "artichokes"];
 var	cupsOfToppings= [ 1, .5, .25, .25, .25];
-
+var bakeTime = 15;
 
 //Boolean
 var numberPizzas = function(qty, veryHungry) {
 	var hunger=true;
 	if (hunger === veryHungry) {
 		console.log("I am starving, I think I will make " + qty + " pizzas today!");
+		return true;
 	} else {
 		console.log("I am not overly hungry, I think I'll just make 1 pizza for now");
+		return false;
 	}
-	return starving;
 };
 var howManyPizzas = numberPizzas(qtyPizzas, starving)
 
@@ -37,13 +38,14 @@ var crustReady = function(crustType, startOven, ovenTemp){
 	} else {
 		console.log("Let me finish preparing my " + crustType + " pizza crust and then I will " + startOven + " the oven to " + ovenTemp + ".");
 	}
+	return crustType;
 };
-	var readyToPreheat = crustReady(typeCrust, prepOven, cookTemp)
+var readyToPreheat = crustReady(typeCrust, prepOven, cookTemp)
 
 
 //Procedure
 var pizzaTemp = function(setTemp) {
-var ovenTemp =375;
+	var ovenTemp =375;
 	if (ovenTemp === setTemp){
 		console.log("Our oven has finished preheating, let's start adding our toppings!");
 	} else {
@@ -71,17 +73,18 @@ for (toppingsNumber = 0; toppingsNumber < toppings.length; toppingsNumber++){
 
 
 //Number
-var bakeTime = 15
-var cookTime = function (minutesCook) {
-	var minutesRemain = minutesCook - 0;
+var cookTime = function(minutesCook) {
+	var minutesRemain = (minutesCook - 0);
 	var checkPizza = 5;
-	While (minutesCook > 0) {
-		console.log( "Pizza is not quite done yet, I will check bak in " + checkPizza + " minutes.");
-		minutesCook -=5;
+		while (minutesCook > 0) {
+			console.log( "Pizza is not done yet, it has " + minutesCook + " minutes left. I will check back in " + checkPizza + " minutes.");
+			minutesCook -= 5;
 	};
+		console.log("Pizza is finished, I can't wait to try it!");
 
-	console.log("Pizza is finished, I can't wait to try it!")
-}	
+	return 15;
+};	
+var cookPizza = cookTime(bakeTime);
 
 
 
