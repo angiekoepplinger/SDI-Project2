@@ -2,7 +2,7 @@
 //Angela Koepplinger
 //SDI: 1208
 //August 09, 2012
-//Project 2
+//Project 2: Let's Make Pizza!
 
 
 //
@@ -82,9 +82,10 @@ var cookTime = function(minutesCook) {
 	};
 		console.log("Pizza is finished, I can't wait to try it!");
 
-	return 15;
+	return minutesCook;
 };	
 var cookPizza = cookTime(bakeTime);
+
 
 
 
